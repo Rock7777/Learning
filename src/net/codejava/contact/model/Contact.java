@@ -6,15 +6,15 @@ public class Contact {
 	private String email;
 	private String address;
 	private String phone;
-	public Contact(Integer id,String name, String email, String address, String phone) {
-		
-		
-		this(name,email,address,phone);
+
+	public Contact(Integer id, String name, String email, String address, String phone) {
+
+		this(name, email, address, phone);
 		this.id = id;
 	}
 
-	public Contact( String name, String email, String address, String phone) {
-		
+	public Contact(String name, String email, String address, String phone) {
+
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -30,6 +30,10 @@ public class Contact {
 
 	public Integer getId() {
 		return id;
+	}
+
+	public Contact() {
+
 	}
 
 	public void setId(Integer id) {
